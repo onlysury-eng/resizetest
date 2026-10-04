@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compress Multiple JPGs — Bulk Image Compressor | BulkImgResize</title>
+    <meta name="description" content="Dramatically reduce JPEG file sizes instantly without losing visual quality. Compress hundreds of JPGs at once using our secure, browser-based batch compressor.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0a0f1d] text-slate-100 min-h-screen flex flex-col">
+    <!-- Minimal Header -->
+    <header class="p-4 border-b border-slate-800 flex justify-between items-center max-w-6xl mx-auto w-full">
+        <a href="index.html" class="font-bold text-lg flex items-center gap-2">
+            <div class="w-6 h-6 rounded bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-black text-slate-950 text-xs">B</div>
+            BulkImg<span class="text-cyan-400">Resize</span>
+        </a>
+        <a href="index.html" class="text-xs text-cyan-400 hover:text-cyan-300 transition">Main App &rarr;</a>
+    </header>
+
+    <!-- Embedded Tool Loaded with the Compressor Preset -->
+    <iframe src="index.html?preset=compressor" class="w-full h-[850px] border-none"></iframe>
+
+    <!-- Dedicated SEO Content -->
+    <article class="max-w-4xl w-full mx-auto px-6 py-12 space-y-6 border-t border-slate-800 mt-auto">
+        <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">How to compress multiple JPGs without losing quality</h1>
+        <p class="text-sm text-slate-300 leading-relaxed">
+            Raw photographs and unoptimized web assets often carry massive file sizes due to ultra-high resolutions and hidden metadata. Serving these uncompressed files on a website drastically increases page load times, hurts your Core Web Vitals, and damages your Google search rankings. 
+        </p>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-4">
+            <h2 class="text-base font-semibold text-cyan-400">The 70% Quality Sweet Spot</h2>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                When compressing JPEGs for web delivery, you rarely need to save files at 100% quality. Human eyes generally cannot detect the difference between a 100% quality JPEG and a 70% quality JPEG, but the file size difference is massive. 
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                Our bulk compressor defaults to a <strong>70% fidelity setting</strong>. This strips out invisible data and unnecessary EXIF metadata (like camera settings and GPS coordinates) while maintaining a crisp, sharp image ready for web publication. 
+            </p>
+        </div>
+        <p class="text-sm text-slate-400">
+            Unlike standard cloud compressors that force you to upload your photography to their servers, BulkImgResize does all the math locally on your machine. You get enterprise-grade batch compression with absolute privacy and zero upload waiting times.
+        </p>
+    </article>
+</body>
+</html>

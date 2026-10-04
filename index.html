@@ -2,16 +2,49 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911473717923066"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911473717923066" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free batch image resizer and compressor. Compress, resize, and convert multiple JPG, PNG, and WebP images instantly in your browser with zero server uploads and 100% privacy.">
+    
+    <!-- Primary Meta Tags -->
+    <title>BulkImgResize — Bulk Image Resizer & Multiple Image Compressor</title>
+    <meta name="description" content="Free bulk image resizer, batch image compressor, and WebP converter. Resize multiple JPG, PNG, and WebP images for websites and Instagram instantly in your browser without uploading files to servers.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bulkimgresize.com/">
+    <meta property="og:title" content="BulkImgResize — Bulk Image Resizer & Multiple Image Compressor">
+    <meta property="og:description" content="Free bulk image resizer, batch image compressor, and WebP converter. Resize multiple JPG, PNG, and WebP images instantly in your browser.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bulkimgresize.com/">
+    <meta property="twitter:title" content="BulkImgResize — Bulk Image Resizer & Multiple Image Compressor">
+    <meta property="twitter:description" content="Free bulk image resizer, batch image compressor, and WebP converter. Resize multiple JPG, PNG, and WebP images instantly in your browser.">
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>BulkImgResize — Bulk Image Compressor & Resizer</title>
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "BulkImgResize",
+      "url": "https://bulkimgresize.com/",
+      "description": "Free, fast, and secure bulk image resizer and compressor operating entirely client-side.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- JSZip and FileSaver -->
@@ -21,43 +54,61 @@
 <body class="bg-[#0a0f1d] text-slate-100 min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
 
     <!-- Top Navigation Bar -->
-    <header class="border-b border-slate-800/80 bg-slate-900/40 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-black text-slate-950 text-lg shadow-lg shadow-cyan-500/20">P</div>
-            <span class="font-bold tracking-tight text-lg">Pixel<span class="text-cyan-400">Shrink</span></span>
+    <header class="border-b border-slate-800/80 bg-slate-900/40 backdrop-blur-md sticky top-0 z-50 px-4 sm:px-6 py-3.5 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-black text-slate-950 text-lg shadow-lg shadow-cyan-500/20">B</div>
+            <a href="/" class="font-bold tracking-tight text-base sm:text-lg">BulkImg<span class="text-cyan-400">Resize</span></a>
         </div>
         <div class="hidden md:flex items-center gap-6 text-xs font-medium text-slate-400">
             <a href="#tool" class="hover:text-cyan-400 transition">Compressor</a>
             <a href="#guide" class="hover:text-cyan-400 transition">How to Use</a>
             <a href="#privacy" class="hover:text-cyan-400 transition">Privacy</a>
-            <a href="#why" class="hover:text-cyan-400 transition">Why Us</a>
+            <a href="#seo" class="hover:text-cyan-400 transition">Use Cases</a>
         </div>
-        <div class="text-xs text-slate-400 font-medium bg-slate-800/50 border border-slate-700/50 px-3 py-1 rounded-full">
-            100% Client-Side • Zero Server Uploads
+        <div class="text-[11px] sm:text-xs text-slate-300 font-medium bg-slate-800/80 border border-slate-700/80 px-3 py-1 rounded-full shadow-inner">
+            🔒 Your images stay on your device
         </div>
     </header>
 
     <!-- Optional Ad Banner Slot (Top) -->
-    <div class="max-w-6xl w-full mx-auto px-6 pt-6">
-        <div class="w-full h-20 bg-slate-900/40 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-slate-600 text-xs tracking-wider uppercase font-mono">
+    <div class="max-w-6xl w-full mx-auto px-4 sm:px-6 pt-4 sm:pt-6">
+        <div class="w-full h-16 sm:h-20 bg-slate-900/40 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-slate-600 text-[10px] sm:text-xs tracking-wider uppercase font-mono">
             Advertisement Space (728x90 Banner)
         </div>
     </div>
 
+    <!-- Redesigned Hero / Above-the-Fold Section -->
+    <section class="max-w-4xl w-full mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-4 text-center space-y-4">
+        <h1 id="main-headline" class="text-2xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+            Bulk Resize & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Compress Images</span>
+        </h1>
+        <p id="main-subhead" class="text-xs sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            Resize hundreds of JPG, PNG & WebP images at once. Everything happens in your browser.
+        </p>
+
+        <!-- Key Benefit Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <span class="text-[11px] bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded-full text-cyan-300 font-semibold shadow-sm">🛡️ Your images stay on your device. Nothing is uploaded to our servers.</span>
+            <span class="text-[11px] bg-slate-900/80 border border-slate-800 px-3 py-1 rounded-full text-slate-300 font-medium">⚡ Batch Processing</span>
+            <span class="text-[11px] bg-slate-900/80 border border-slate-800 px-3 py-1 rounded-full text-slate-300 font-medium">✨ No Signup</span>
+            <span class="text-[11px] bg-slate-900/80 border border-slate-800 px-3 py-1 rounded-full text-slate-300 font-medium">📦 Instant ZIP</span>
+        </div>
+    </section>
+
     <!-- Main Workspace Section -->
-    <main id="tool" class="max-w-6xl w-full mx-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start my-8">
+    <main id="tool" class="max-w-6xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start my-2 sm:my-4">
         
-        <!-- Left Column: Controls & Settings (4 Cols) -->
-        <div class="lg:col-span-5 bg-slate-900/80 border border-slate-800/80 rounded-3xl p-6 shadow-2xl space-y-6 backdrop-blur-sm">
+        <!-- Left Column: Controls & Settings -->
+        <div class="lg:col-span-5 bg-slate-900/90 border border-slate-800/90 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 backdrop-blur-sm order-2 lg:order-1">
             <div>
-                <h2 class="text-base font-semibold text-white">Compression Settings</h2>
-                <p class="text-xs text-slate-400 mt-0.5">Configure target dimensions and quality output.</p>
+                <h2 class="text-sm sm:text-base font-semibold text-white">Compression Settings</h2>
+                <p class="text-[11px] sm:text-xs text-slate-400 mt-0.5">Configure target dimensions and quality output.</p>
             </div>
 
             <!-- Max Width -->
             <div class="space-y-2">
                 <div class="flex justify-between items-center">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-slate-400">Max Width Cap (px)</label>
+                    <label class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-slate-400">Max Width Cap (px)</label>
                     <span class="text-[10px] text-cyan-400 font-mono">Max: 4000px</span>
                 </div>
                 <input type="number" id="maxWidth" value="1200" max="4000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-500 transition font-mono">
@@ -69,22 +120,22 @@
                 </div>
 
                 <!-- Expanded Standard Presets -->
-                <div class="pt-2 space-y-1.5">
+                <div class="pt-1 space-y-1.5">
                     <div class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Standard Presets</div>
                     <div class="flex gap-1.5 flex-wrap">
-                        <button type="button" onclick="setWidth(400)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1 rounded-lg transition border border-slate-700/50">400 (Avatar)</button>
-                        <button type="button" onclick="setWidth(800)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1 rounded-lg transition border border-slate-700/50">800 (Social)</button>
-                        <button type="button" onclick="setWidth(1200)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1 rounded-lg transition border border-slate-700/50">1200 (Web)</button>
-                        <button type="button" onclick="setWidth(1920)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1 rounded-lg transition border border-slate-700/50">1920 (FHD)</button>
-                        <button type="button" onclick="setWidth(2560)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1 rounded-lg transition border border-slate-700/50">2560 (QHD)</button>
-                        <button type="button" onclick="setWidth(3840)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1 rounded-lg transition border border-slate-700/50">3840 (4K)</button>
+                        <button type="button" onclick="setWidth(400)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1.5 rounded-lg transition border border-slate-700/50">400 (Avatar)</button>
+                        <button type="button" onclick="setWidth(1080)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1.5 rounded-lg transition border border-slate-700/50">1080 (IG/Social)</button>
+                        <button type="button" onclick="setWidth(1200)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1.5 rounded-lg transition border border-slate-700/50">1200 (Web)</button>
+                        <button type="button" onclick="setWidth(1920)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1.5 rounded-lg transition border border-slate-700/50">1920 (FHD)</button>
+                        <button type="button" onclick="setWidth(2560)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1.5 rounded-lg transition border border-slate-700/50">2560 (QHD)</button>
+                        <button type="button" onclick="setWidth(3840)" class="text-[10px] bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2 py-1.5 rounded-lg transition border border-slate-700/50">3840 (4K)</button>
                     </div>
                 </div>
             </div>
 
             <!-- Output Format -->
             <div class="space-y-2">
-                <label class="text-xs font-semibold uppercase tracking-wider text-slate-400">Format Strategy</label>
+                <label class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-slate-400">Format Strategy</label>
                 <select id="outputFormat" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-500 transition">
                     <option value="image/webp" selected>WebP (Best Compression)</option>
                     <option value="image/jpeg">JPEG Standard</option>
@@ -95,44 +146,56 @@
             <!-- Quality Slider -->
             <div class="space-y-2">
                 <div class="flex justify-between text-xs">
-                    <span class="font-semibold uppercase tracking-wider text-slate-400">Fidelity Quality</span>
+                    <span class="font-semibold uppercase tracking-wider text-slate-400 text-[11px] sm:text-xs">Fidelity Quality</span>
                     <span class="font-mono text-cyan-400 font-bold"><span id="qualityVal">85</span>%</span>
                 </div>
                 <input type="range" id="quality" min="10" max="100" value="85" class="w-full accent-cyan-500 cursor-pointer bg-slate-950 rounded-lg h-2" oninput="document.getElementById('qualityVal').innerText = this.value">
             </div>
 
-            <div class="pt-2 border-t border-slate-800/80">
-                <button id="processBtn" onclick="processImages()" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold py-3.5 rounded-xl text-sm shadow-xl shadow-cyan-500/10 transition disabled:opacity-40 disabled:cursor-not-allowed">
-                    Compress & Package (.zip)
+            <div class="pt-2 border-t border-slate-800/80 space-y-3">
+                <button id="processBtn" onclick="processImages()" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold py-4 rounded-xl text-sm shadow-xl shadow-cyan-500/10 transition disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                    <span>Compress & Package (.zip)</span>
                 </button>
-                <p id="status" class="text-center text-xs text-slate-400 mt-3 h-4 font-medium"></p>
+                
+                <!-- Enhanced Mobile Progress Bar Container -->
+                <div id="progressContainer" class="hidden space-y-1.5">
+                    <div class="flex justify-between text-[11px] text-slate-400 font-mono">
+                        <span id="status">Processing...</span>
+                        <span id="progressPct">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-950 rounded-full h-2.5 overflow-hidden border border-slate-800">
+                        <div id="progressBar" class="bg-gradient-to-r from-cyan-500 to-blue-600 h-full w-0 transition-all duration-150"></div>
+                    </div>
+                </div>
+                <p id="statusFallback" class="text-center text-xs text-slate-400 h-3 font-medium"></p>
             </div>
         </div>
 
-        <!-- Right Column: Dropzone & Gallery (7 Cols) -->
-        <div class="lg:col-span-7 space-y-4">
+        <!-- Right Column: Dropzone & Gallery -->
+        <div class="lg:col-span-7 space-y-4 order-1 lg:order-2">
             
-            <!-- Dropzone -->
-            <div id="dropZone" class="border-2 border-dashed border-slate-700/80 hover:border-cyan-500 transition-all rounded-3xl p-10 text-center cursor-pointer bg-slate-900/40 hover:bg-slate-900/70 group relative overflow-hidden">
+            <!-- Dropzone Optimized for Mobile Multi-Image Upload -->
+            <div id="dropZone" class="border-2 border-dashed border-slate-700/80 hover:border-cyan-500 transition-all rounded-3xl p-6 sm:p-10 text-center cursor-pointer bg-slate-900/40 hover:bg-slate-900/70 group relative overflow-hidden">
                 <input type="file" id="fileInput" multiple accept="image/*" class="hidden">
                 <div class="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition pointer-events-none"></div>
-                <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mx-auto mb-4 text-cyan-400 group-hover:scale-110 transition shadow-md">
+                <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mx-auto mb-3 sm:mb-4 text-cyan-400 group-hover:scale-110 transition shadow-md">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
                 </div>
-                <p class="text-sm font-semibold text-slate-200">Drop image files here, or <span class="text-cyan-400 underline underline-offset-4">browse files</span></p>
-                <p class="text-xs text-slate-500 mt-1">Supports PNG, JPG, WEBP • Automatically downscales oversized assets</p>
+                <p class="text-sm font-semibold text-slate-200">Tap to select or drop multiple images here</p>
+                <p class="text-xs text-cyan-400 underline underline-offset-4 mt-1">Browse photo library / files</p>
+                <p class="text-[11px] text-slate-500 mt-2">Supports multi-select for JPG, PNG, WEBP • Processed locally</p>
             </div>
 
             <!-- Dynamic File Grid Container -->
-            <div class="bg-slate-900/40 border border-slate-800/80 rounded-3xl p-5 min-h-[220px] max-h-[360px] overflow-y-auto">
+            <div class="bg-slate-900/40 border border-slate-800/80 rounded-3xl p-4 sm:p-5 min-h-[200px] max-h-[320px] sm:max-h-[360px] overflow-y-auto">
                 <div class="flex items-center justify-between mb-3 px-1">
                     <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Active Queue</span>
                     <span id="queueCount" class="text-xs text-cyan-400 font-mono">0 files loaded</span>
                 </div>
                 <div id="previewGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-3 empty:flex empty:items-center empty:justify-center">
                     <!-- Empty State Placeholder -->
-                    <div id="emptyState" class="col-span-full py-12 text-center text-slate-600 text-xs italic">
-                        No images queued yet. Drop files above to begin.
+                    <div id="emptyState" class="col-span-full py-10 text-center text-slate-600 text-xs italic">
+                        No images queued yet. Select files above to begin.
                     </div>
                 </div>
             </div>
@@ -142,25 +205,61 @@
     </main>
 
     <!-- Mid-Page Ad Banner Slot -->
-    <div class="max-w-6xl w-full mx-auto px-6 my-6">
-        <div class="w-full h-24 bg-slate-900/40 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-slate-600 text-xs tracking-wider uppercase font-mono">
+    <div class="max-w-6xl w-full mx-auto px-4 sm:px-6 my-6">
+        <div class="w-full h-20 sm:h-24 bg-slate-900/40 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-slate-600 text-[10px] sm:text-xs tracking-wider uppercase font-mono">
             Advertisement Space (Leaderboard 970x90)
         </div>
     </div>
 
-    <!-- Informational Landing Content (Scroll Down Section) -->
-    <section class="max-w-6xl w-full mx-auto px-6 py-12 space-y-16 border-t border-slate-800/80 mt-8">
+    <!-- Informational Landing Content & SEO Targeted Use Cases -->
+    <section id="seo" class="max-w-6xl w-full mx-auto px-4 sm:px-6 py-10 sm:py-12 space-y-16 border-t border-slate-800/80 mt-8">
         
+        <!-- SEO Keyword Targeted Overview Grid -->
+        <div class="space-y-6">
+            <h3 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="text-cyan-400">#</span> Complete Browser-Based Image Optimization Suite
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Whether you need a reliable <strong>bulk image resizer</strong> for your portfolio, a <strong>batch image resizer</strong> for rapid client delivery, or a fast <strong>bulk image compressor</strong> to boost page speed, BulkImgResize handles everything securely right inside your browser.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="?preset=instagram" class="block bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-5 space-y-2 transition group">
+                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider group-hover:text-cyan-400 transition">Resize for Instagram &rarr;</h4>
+                    <p class="text-[11px] text-slate-400 leading-normal">Easily prep photos for social feeds and stories with targeted pixel width caps to prevent awkward platform auto-cropping.</p>
+                </a>
+                <a href="?preset=webp" class="block bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-5 space-y-2 transition group">
+                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider group-hover:text-cyan-400 transition">Bulk WebP Converter &rarr;</h4>
+                    <p class="text-[11px] text-slate-400 leading-normal">Convert bulky legacy PNGs and JPEGs into high-compression WebP files for maximum bandwidth savings.</p>
+                </a>
+                <a href="?preset=compressor" class="block bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 rounded-2xl p-5 space-y-2 transition group">
+                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider group-hover:text-cyan-400 transition">Compress Multiple JPGs &rarr;</h4>
+                    <p class="text-[11px] text-slate-400 leading-normal">Strip unnecessary EXIF metadata and reduce JPEG file weights significantly while retaining sharp visual fidelity.</p>
+                </a>
+                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
+                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider text-cyan-400">Resize Multiple Images</h4>
+                    <p class="text-[11px] text-slate-400 leading-normal">Select dozens or hundreds of photos simultaneously and apply unified dimension caps instantly without manual opening.</p>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
+                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider text-cyan-400">Resize Images for Websites</h4>
+                    <p class="text-[11px] text-slate-400 leading-normal">Optimize visual assets to exact web widths (1200px / 1920px) to drastically improve Google Lighthouse scores and Core Web Vitals.</p>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
+                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider text-cyan-400">Resize Without Uploading</h4>
+                    <p class="text-[11px] text-slate-400 leading-normal">Complete security guarantee: your files never leave your device storage or get exposed to third-party servers.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- How to Use -->
         <div id="guide" class="space-y-6">
             <h3 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                <span class="text-cyan-400">#</span> How to Use PixelShrink
+                <span class="text-cyan-400">#</span> How to Use BulkImgResize
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 space-y-3">
                     <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center font-bold justify-center text-sm">1</div>
                     <h4 class="font-semibold text-sm text-slate-200">Select Images</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Drag and drop any number of PNG, JPG, or WebP images into the upload box or click to browse files from your device.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Tap or drag and drop any number of PNG, JPG, or WebP images into the upload box directly from your phone or computer.</p>
                 </div>
                 <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 space-y-3">
                     <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center font-bold justify-center text-sm">2</div>
@@ -170,52 +269,7 @@
                 <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 space-y-3">
                     <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center font-bold justify-center text-sm">3</div>
                     <h4 class="font-semibold text-sm text-slate-200">Compress & Download</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Hit process and instantly download your optimized batch neatly packaged into a single convenient ZIP file.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Privacy & Security -->
-        <div id="privacy" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900/40 border border-slate-800/80 rounded-3xl p-8">
-            <div class="lg:col-span-7 space-y-4">
-                <h3 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                    <span class="text-cyan-400">#</span> 100% Privacy & Client-Side Security
-                </h3>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                    Unlike traditional online converters that upload your personal photos, sensitive graphics, or work assets to a remote server database, <strong>PixelShrink operates entirely inside your web browser</strong>.
-                </p>
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    Using advanced HTML5 Canvas and local web worker memory APIs, your files are processed locally on your machine's hardware. Your images never touch our servers, ensuring absolute confidentiality and lightning-fast batch speeds without network latency.
-                </p>
-            </div>
-            <div class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-2xl p-6 space-y-4 text-center">
-                <div class="text-cyan-400 font-mono text-xs uppercase tracking-wider font-bold">Security Guarantee</div>
-                <div class="text-3xl font-black text-slate-100">0 Bytes</div>
-                <p class="text-xs text-slate-500">Transferred or stored on remote cloud infrastructure.</p>
-            </div>
-        </div>
-
-        <!-- Why Use PixelShrink -->
-        <div id="why" class="space-y-6">
-            <h3 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                <span class="text-cyan-400">#</span> Why Optimize With Us?
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
-                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider">Lightning Fast</h4>
-                    <p class="text-[11px] text-slate-400 leading-normal">No waiting for queue uploads or server response bottlenecks. Batch processes locally in seconds.</p>
-                </div>
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
-                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider">Zero Registration</h4>
-                    <p class="text-[11px] text-slate-400 leading-normal">No account creation, no sign-up forms, and no API keys required. Open and use instantly.</p>
-                </div>
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
-                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider">Modern Formats</h4>
-                    <p class="text-[11px] text-slate-400 leading-normal">Convert bulky legacy PNGs into highly optimized WebP files for better web performance.</p>
-                </div>
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-2">
-                    <h4 class="font-semibold text-xs text-slate-200 uppercase tracking-wider">Completely Free</h4>
-                    <p class="text-[11px] text-slate-400 leading-normal">No hidden paywalls, file size limits, or premium subscriptions. Use it as much as you need.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Hit process and instantly download your optimized batch neatly packaged into a single convenient mobile-friendly ZIP file.</p>
                 </div>
             </div>
         </div>
@@ -223,20 +277,61 @@
     </section>
 
     <!-- Bottom Ad Banner Slot -->
-    <div class="max-w-6xl w-full mx-auto px-6 mb-8">
-        <div class="w-full h-24 bg-slate-900/40 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-slate-600 text-xs tracking-wider uppercase font-mono">
+    <div class="max-w-6xl w-full mx-auto px-4 sm:px-6 mb-8">
+        <div class="w-full h-20 sm:h-24 bg-slate-900/40 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-slate-600 text-[10px] sm:text-xs tracking-wider uppercase font-mono">
             Advertisement Space (Footer Rectangle 300x250 or 728x90)
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800/80 bg-slate-900/40 py-6 px-6 text-center text-xs text-slate-500 space-y-2">
-        <p>© 2026 PixelShrink Engine • Built for secure, instant local media optimization.</p>
-        <p class="text-[10px] text-slate-600">All image processing occurs strictly client-side via browser memory APIs.</p>
+    <footer class="border-t border-slate-800/80 bg-slate-900/40 py-6 px-4 sm:px-6 text-center text-xs text-slate-500 space-y-2">
+        <p>© 2026 BulkImgResize Engine • Built for secure, instant local media optimization.</p>
+        <p class="text-[10px] text-slate-600">All image processing occurs strictly client-side via browser memory APIs. Your images stay on your device.</p>
     </footer>
 
     <!-- Script Logic -->
     <script>
+        // --- DYNAMIC SEO ROUTING ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hide the main app header if it's loaded inside an iframe
+            if (window.self !== window.top) {
+                const header = document.querySelector('header');
+                if (header) header.style.display = 'none';
+            }
+
+            const params = new URLSearchParams(window.location.search);
+            const preset = params.get('preset');
+            const h1 = document.getElementById('main-headline');
+            const subhead = document.getElementById('main-subhead');
+
+            if (preset === 'instagram') {
+                setWidth(1080);
+                document.getElementById('outputFormat').value = 'image/jpeg';
+                document.getElementById('quality').value = 90;
+                document.getElementById('qualityVal').innerText = '90';
+                
+                if (h1) h1.innerHTML = 'Resize Images for <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Instagram</span>';
+                if (subhead) subhead.innerText = 'Instantly bulk resize your photos to 1080px for perfect Instagram grids and stories. No uploads required.';
+                document.title = "Resize Images for Instagram — BulkImgResize";
+            
+            } else if (preset === 'webp') {
+                document.getElementById('outputFormat').value = 'image/webp';
+                
+                if (h1) h1.innerHTML = 'Bulk <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">WebP Converter</span>';
+                if (subhead) subhead.innerText = 'Convert hundreds of JPGs and PNGs to highly optimized WebP format locally in your browser.';
+                document.title = "Bulk WebP Converter — BulkImgResize";
+            
+            } else if (preset === 'compressor') {
+                document.getElementById('quality').value = 70;
+                document.getElementById('qualityVal').innerText = '70';
+                
+                if (h1) h1.innerHTML = 'Bulk Image <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-500">Compressor</span>';
+                if (subhead) subhead.innerText = 'Dramatically reduce file sizes for JPG, PNG, and WebP images without losing visual quality.';
+                document.title = "Bulk Image Compressor — BulkImgResize";
+            }
+        });
+
+        // --- CORE LOGIC ---
         const dropZone = document.getElementById('dropZone');
         const fileInput = document.getElementById('fileInput');
         const previewGrid = document.getElementById('previewGrid');
@@ -278,12 +373,12 @@
             
             if (selectedFiles.length > 0) {
                 countLabel.innerText = `${selectedFiles.length} file(s) loaded`;
-                document.getElementById('status').innerText = '';
+                document.getElementById('statusFallback').innerText = '';
             } else {
                 countLabel.innerText = '0 files loaded';
                 previewGrid.innerHTML = `
-                    <div id="emptyState" class="col-span-full py-12 text-center text-slate-600 text-xs italic">
-                        No images queued yet. Drop files above to begin.
+                    <div id="emptyState" class="col-span-full py-10 text-center text-slate-600 text-xs italic">
+                        No images queued yet. Select files above to begin.
                     </div>
                 `;
                 return;
@@ -320,14 +415,24 @@
             const quality = parseInt(document.getElementById('quality').value) / 100;
             const btn = document.getElementById('processBtn');
             const status = document.getElementById('status');
+            const statusFallback = document.getElementById('statusFallback');
+            const progressContainer = document.getElementById('progressContainer');
+            const progressBar = document.getElementById('progressBar');
+            const progressPct = document.getElementById('progressPct');
 
             btn.disabled = true;
+            progressContainer.classList.remove('hidden');
+            statusFallback.innerText = '';
+            
             const zip = new JSZip();
 
             for (let i = 0; i < selectedFiles.length; i++) {
+                const pct = Math.round(((i) / selectedFiles.length) * 100);
                 status.innerText = `Compressing ${i + 1} of ${selectedFiles.length}...`;
+                progressBar.style.width = `${pct}%`;
+                progressPct.innerText = `${pct}%`;
+
                 const file = selectedFiles[i];
-                
                 try {
                     const blob = await resizeSingleImage(file, maxWidth, format, quality);
                     const ext = format.split('/')[1];
@@ -339,11 +444,25 @@
             }
 
             status.innerText = 'Packaging zip bundle...';
-            const content = await zip.generateAsync({ type: 'blob' });
-            saveAs(content, 'pixelshrink-optimized.zip');
+            progressBar.style.width = '95%';
+            progressPct.innerText = '95%';
 
-            status.innerText = 'Compression complete!';
-            btn.disabled = false;
+            try {
+                const content = await zip.generateAsync({ type: 'blob' });
+                saveAs(content, 'bulkimgresize-optimized.zip');
+                
+                progressBar.style.width = '100%';
+                progressPct.innerText = '100%';
+                status.innerText = 'Compression complete & downloaded!';
+            } catch (zipErr) {
+                console.error('ZIP generation error:', zipErr);
+                status.innerText = 'Error generating ZIP package.';
+            }
+
+            setTimeout(() => {
+                progressContainer.classList.add('hidden');
+                btn.disabled = false;
+            }, 3000);
         }
 
         function resizeSingleImage(file, maxWidth, format, quality) {
